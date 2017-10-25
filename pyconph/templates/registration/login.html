@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='form-page'>
+  <h2>Login</h2>
+  <form action='' method='post'>
+    {% csrf_token %}
+    <input type='hidden' name='next' value='{{ next }}'>
+    {{ form.as_p }}
+    <p>
+      <button type='submit'>Login</button>
+      <!--
+      <a href='{% url "auth_password_reset" %}'>Reset password</a>
+      /
+      -->
+      <a href='{% url "registration_register" %}'>Register</a>
+    </p>
+  </form>
+</div>
+{% endblock %}
+

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Call for Proposals - PyCon PH 2018{% endblock %}
+
+{% block content %}
+<div class='form-page'>
+  <div>
+    <h2>Call for Proposals</h2>
+    <p>
+      We are now accepting proposals of presentations for next year's PyCon PH!
+      Here are a few tips<sup>*</sup> on submitting a proposal:
+    </p>
+    <ul>
+      <li>Include details about the intended audience of your talk. e.g. devops
+        engineers, data scientists, django users, etc.
+      <li>Be clear about the takeaway/s of your presentation.
+      <li>Submit early so we can give feedback or request for changes.
+      <li>Avoid self-advertisements except for open source contributions.
+      <li>Check out the talks from the previous PyCons:
+        <a href='https://pycon-2014.python.ph/#schedule'>2014</a>,
+        <a href='https://pycon-2015.python.ph/talks.html'>2015</a>,
+        <a href='https://pycon-2016.python.ph/#schedule'>2016</a>, and
+        <a href='https://pycon-2017.python.ph/#schedule'>2017</a>.
+    </ul>
+    <p>
+      <sup>*</sup>
+      <small>Inspired by https://us.pycon.org/2018/speaking/talks/</small>
+    </p>
+    <h3>Important Dates</h3>
+    <ul>
+      <li>26 October - Opening of call for proposals
+      <li>26 December - Closing of call for proposals
+      <li>Mid January 2018 - Sending of acceptance/rejection emails
+      <li>Late January 2018 - Announcement of final schedule
+    </ul>
+  </div>
+  <form action='' method='post'>
+  {% if request.user.is_authenticated %}
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><button type='submit'>Submit Proposal</button></p>
+  {% else %}
+    <p>You need an account to submit a proposal.</p>
+    <p>
+      <a href='{% url "auth_login" %}?next=/cfp/'>Login</a> or
+      <a href='{% url "registration_register" %}'>Register</a>
+    </p>
+  {% endif %}
+  </form>
+</div>
+{% endblock %}

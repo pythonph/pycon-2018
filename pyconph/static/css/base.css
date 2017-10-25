@@ -1,0 +1,117 @@
+/*
+  yellow: #ffe873
+  blue: #5a9fd4
+ */
+
+body {
+  margin: 3rem;
+  color: #333;
+}
+
+html, body, input, textarea, select, button {
+  font: 16px/1.5 anonymous-pro, sans-serif;
+}
+
+/* Typography */
+
+a {
+  color: #5a9fd4;
+}
+
+h1, h2, h3 {
+  font-family: europa, sans-serif;
+  font-style: italic;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 6.854em;
+  text-transform: uppercase;
+}
+
+h2 { font-size: 4.236em; }
+
+h3 { font-size: 2.618em; }
+
+h2, h3 { font-weight: 300; }
+
+/* Layout */
+
+h1, h2, h3, p, ul, ol {
+  margin: 0 0 1.5rem;
+}
+
+ul, ol {
+  padding-left: .75rem;
+  list-style: square;
+}
+
+input, textarea {
+  box-sizing: border-box;
+  padding: 0.25rem;
+  border: 0;
+}
+
+button, .btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  background: #5a9fd4;
+  border: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.btn.-yellow {
+  background: #ffe873;
+  color: #333;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+form {
+  background: #ffe873;
+  color: #333;
+  padding: 3rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+form > p > label {
+  display: block;
+}
+
+form > p > input,
+form > p > textarea {
+  width: 100%;
+}
+
+main {
+  overflow: visible;
+  background-size: 50%;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+/* Pages */
+
+.form-page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.form-page > * {
+  flex: 1;
+}
+
+.form-page > form {
+  flex: 1.5;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+
