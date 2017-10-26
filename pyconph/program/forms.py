@@ -17,6 +17,14 @@ class NamedRegistrationForm(RegistrationForm):
 
 
 class ProposalForm(forms.ModelForm):
+    duration = forms.ChoiceField(choices=[
+        ('00:30:00', '30 minutes'),
+        ('00:45:00', '45 minutes'),
+        ('01:00:00', '1 hour'),
+        ('02:00:00', '2 hours'),
+        ('03:00:00', '3 hours'),
+    ])
+
     class Meta:
         model = Proposal
         fields = ['title', 'description', 'abstract', 'presentation_type',
