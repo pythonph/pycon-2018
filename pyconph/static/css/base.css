@@ -114,4 +114,12 @@ main {
   margin-left: 1.5rem;
 }
 
+.form-page.-register {
+  background: url(../images/pen.png) no-repeat -4rem 4rem;
+  background-size: 20rem;
+}
 
+.form-page.-login {
+  background: url(../images/key.png) no-repeat left 6rem;
+  background-size: 20rem;
+}
