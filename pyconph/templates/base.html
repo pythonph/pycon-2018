@@ -5,6 +5,10 @@
   <script src='https://use.typekit.net/lbg2gck.js'></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link rel='stylesheet' href='{% static "css/base.css" %}'>
+  <meta property='og:title'
+    content='{% block og_title %}PyCon PH 2018{% endblock %}'>
+  <meta property='og:description'
+    content='{% block og_description %}PyCon Philippines is a volunteer-run, not-for-profit conference centered around the Python Programming language.{% endblock %}'>
 <body>
   <main>
     <h1>PyCon PH 2018</h1>
