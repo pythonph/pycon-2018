@@ -1,3 +1,4 @@
+dj-database-url
 django
 django-anymail[mailgun]
 django-registration-redux
