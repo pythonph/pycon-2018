@@ -2,5 +2,6 @@ dj-database-url
 django
 django-anymail[mailgun]
 django-registration-redux
-python-dotenv
 gunicorn
+psycopg2
+python-dotenv
