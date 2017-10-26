@@ -3,3 +3,4 @@ django
 django-anymail[mailgun]
 django-registration-redux
 python-dotenv
+gunicorn
