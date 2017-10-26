@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Call for Proposals - PyCon PH 2018{% endblock %}
+
+{% block content %}
+<div class='page'>
+  <h2>Proposal Submitted</h2>
+  <p>Thank you for your submission! We'll get in touch once we've reviewed your
+  proposal or if we have comments on it. Good luck!</p>
+  <h3>Important Dates</h3>
+  <ul>
+    <li>26 October - Opening of call for proposals
+    <li>26 December - Closing of call for proposals
+    <li>Mid January 2018 - Sending of acceptance/rejection emails
+    <li>Late January 2018 - Announcement of final schedule
+    <li>25-26 Ferbruary 2018 - PyCon PH 2018
+  </ul>
+  <p><a class='btn -yellow' href='{% url "cfp" %}'>Submit another proposal</a></p>
+</div>
+{% endblock %}

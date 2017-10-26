@@ -14,3 +14,7 @@ def cfp(request):
     else:
         form = ProposalForm()
     return render(request, 'program/cfp.html', {'form': form})
+
+
+def cfp_thanks(request):
+    return render(request, 'program/cfp_thanks.html')

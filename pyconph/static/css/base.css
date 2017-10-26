@@ -98,6 +98,10 @@ main {
 
 /* Pages */
 
+.page {
+  max-width: 40rem;
+}
+
 .form-page {
   display: flex;
   align-items: flex-start;
