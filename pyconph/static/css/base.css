@@ -1,26 +1,28 @@
 /*
-  yellow: #ffe873
-  blue: #5a9fd4
- */
+#fffd82;
+#ff9b71;
+#e84855;
+#b56b45;
+#2b3a67;
+*/
 
 body {
+  background: #2b3a67;
+  color: #fffd82;
   margin: 3rem;
-  color: #333;
 }
 
 html, body, input, textarea, select, button {
-  font: 16px/1.5 anonymous-pro, sans-serif;
+  font: 16px/1.5 europa, sans-serif;
 }
 
 /* Typography */
 
 a {
-  color: #5a9fd4;
+  color: #e84855;
 }
 
 h1, h2, h3 {
-  font-family: europa, sans-serif;
-  font-style: italic;
   line-height: 1;
 }
 
@@ -56,7 +58,7 @@ button, .btn {
   display: inline-block;
   box-sizing: border-box;
   padding: 0.5rem 1rem;
-  background: #5a9fd4;
+  background: #e84855;
   border: 0;
   color: white;
   text-decoration: none;
@@ -96,6 +98,10 @@ main {
   margin: 0 auto;
 }
 
+header {
+  margin-bottom: 4.5rem;
+}
+
 /* Pages */
 
 .page {
@@ -116,14 +122,4 @@ main {
   flex: 1.5;
   margin-bottom: 1.5rem;
   margin-left: 1.5rem;
-}
-
-.form-page.-register {
-  background: url(../images/pen.png) no-repeat -4rem 4rem;
-  background-size: 20rem;
-}
-
-.form-page.-login {
-  background: url(../images/key.png) no-repeat left 6rem;
-  background-size: 20rem;
 }

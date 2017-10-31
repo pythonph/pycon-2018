@@ -47,7 +47,6 @@
     {{ form.as_p }}
     <p><button type='submit'>Submit Proposal</button></p>
   {% else %}
-    <p><img src='{% static "images/tablet.png" %}' width='50%'></p>
     <p>You need an account to submit a proposal.</p>
     <p>
       <a href='{% url "auth_login" %}?next=/cfp/'>Login</a> or
