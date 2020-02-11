@@ -10,7 +10,7 @@ click==6.7                # via python-dotenv
 dj-database-url==0.4.2
 django-anymail[mailgun]==1.0
 django-registration-redux==1.8
-django==1.11.6
+django==1.11.28
 gunicorn==19.7.1
 idna==2.6                 # via requests
 psycopg2==2.7.3.2
